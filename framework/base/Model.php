@@ -689,7 +689,7 @@ class Model extends Component implements IteratorAggregate, ArrayAccess, Arrayab
      * @see safeAttributes()
      * @see attributes()
      */
-    public function setAttributes($values, $safeOnly = true)
+    public function setAttributes(array $values, $safeOnly = true)
     {
         if (is_array($values)) {
             $attributes = array_flip($safeOnly ? $this->safeAttributes() : $this->attributes());
